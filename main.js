@@ -1,4 +1,5 @@
 alert("Bienvenidos a Doron");
+//DESAFIO FUNCION
 /*
 const x = 5;
 let carrito = 0;
@@ -33,6 +34,9 @@ function catalogo() {
     }
 }
 catalogo(x); */
+
+//DESAFIO ARRAYS
+/*
 let productos = {
     remeras : 1000,
     pantalones : 4000,
@@ -44,4 +48,39 @@ let buzos = productos ["buzos"];
 
 console.log(`En un principio tenemos remeras que cuestan ${remeras},
 tambien tenemos pantalones que estan ${pantalones} y por
-ultimo tenemos unos buzos que te quedan a ${buzos}`); 
+ultimo tenemos unos buzos que te quedan a ${buzos}`);  */
+
+
+
+
+const productos = newFunction();
+
+function newFunction() {
+    return [{
+        id: 1,
+        nombre: 'Remeras',
+        precio: 1500
+    }, {
+        id: 2,
+        nombre: 'Jeans',
+        precio: 4000
+    }, {
+        id: 3,
+        nombre: 'Hoddies',
+        precio: 5000
+    }, {
+        id: 4,
+        nombre: 'Campereas',
+        precio: 6000
+    }];
+}
+
+    for (const producto of productos) {
+        let contenedor = document.createElement("div");
+
+        contenedor.innerHTML = `<h3> ID: ${producto.id} </h3>
+        <p> ID: ${producto.nombre} </p>
+        <b> ID: ${producto.precio} </b>`;
+
+        document.body.appendChild (contenedor);
+    } 
