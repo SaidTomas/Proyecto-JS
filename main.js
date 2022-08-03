@@ -116,3 +116,20 @@ function comprarButtonClicked() {
     shoppingCartItemsContainer.innerHTML = "";
     updateShoppingCartTotal();
 }
+
+//Agregando Spread
+let combo1 = {
+    2000: 'remeras',
+    5000: 'buzos',
+    6000: 'jeans',
+};
+let combo2 = {
+    10000: 'camperas',
+    500: 'accesorios',
+    2000: 'remeras',
+};
+let agregarRegalo = 'BoxerFree';
+
+let combo3 = {...combo1, ...combo2, agregarRegalo};
+console.log(combo3)
+
