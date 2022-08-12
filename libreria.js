@@ -1,10 +1,7 @@
 //Agregando LIbrerias Al Proyecto!
-
 //Toastify cuando pulsas en agregar al carro
-
-const agregarAlCarrito = document.querySelector ('addToCart')
-btn.addEventListener('click', () => {
-    Toastify({
+const addToCart = () => {
+    /*Toastify({
         text: "Probando toast!",
         duration: 3000,
         gravity: "top", 
@@ -13,13 +10,14 @@ btn.addEventListener('click', () => {
         style: {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-    }).showToast();
-})
+    }).showToast();*/
+}
+
 
 //Swet Alert cuando pulsas en comprar.
+const btn = document.getElementById ('comprasteOk');
 
-const btn = document.querySelector ('comprasteOk')
-btn .getElementsById ('click', () => {
+btn .addEventListener ('click', () => {
     Swal.fire({
         title: 'Felicitaciones, tu compra fue realizada!',
         text: 'Deseas seguir comprando?',
