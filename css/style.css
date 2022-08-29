@@ -2,6 +2,7 @@
 body {
     background-color: antiquewhite;
 }
+
 .btn-primary {
     background-color: darkgray;
     color: #000000;
@@ -12,6 +13,7 @@ body {
 .store {
     margin: 20px;
 }
+
 .item {
     border: 1px solid #202020;
     padding: 20px;
@@ -202,6 +204,10 @@ footer {
 /*FINALIZO FOOTER*/
 
 /*INICIO CONTENEDOR DE CONTACTO*/
+.contenedor {
+    margin: 20px;
+}
+
 .contenedor .form .form-header .form-title {
     font-weight: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -273,26 +279,73 @@ footer {
 
 /*FINALIZO CONTENEDOR DE CONTACTO*/
 
+/*INICIO MAPA*/
+
+.mapa {
+    display: block;
+    outline: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+/*FINALIZO MAPA*/
+
 /*Cards pagina index*/
 .container1 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
+
 .card-title {
     text-align: center;
     color: #202020;
 }
+
 .buttoncard {
     background-color: darkgrey;
     display: block;
 }
+
+.buttoncard:hover {
+    background-color: rgb(92, 91, 91);
+    color: antiquewhite;
+}
+
 .card {
     border: 1px solid #202020;
+    margin: 10px;
 }
+
 @media only screen and (max-width: 576px) {
     .container1 {
         display: flex;
         flex-direction: column;
     }
 }
+
+/*Inicio Pagina Carrito*/
+.subtitulo-cart {
+    color: #202020;
+    font-weight: bold;
+}
+.main-cart {
+    padding: 30px;
+}
+.color-titulo-yourcart {
+    color: #202020;
+}
+.tres-objetos {
+    background-color: darkgrey;
+    color: #202020;
+}
+.color-boton {
+    background-color: darkgrey;
+    color: black;
+}
+.color-boton:hover {
+    background-color: rgb(92, 91, 91);
+    color: antiquewhite;
+}
+/*Finalizo pagina carrito*/ 

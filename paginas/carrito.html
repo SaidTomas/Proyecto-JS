@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarHeader">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Catalogo</a>
+                            <a href="/index.html" class="nav-link active">Catalogo</a>
                         </li>
                         <li class="nav-item">
                             <a href="/paginas/remeras.html" class="nav-link active">Remeras</a>
@@ -52,11 +52,209 @@
                             <a href="/paginas/contact.html" class="nav-link">Contacto</a>
                         </li>
                     </ul>
-                    <a href="/paginas/carrito.html" class="btn buttoncard">Carrito</a>
+                    <a href="#" class="btn buttoncard">Carrito</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!--INICIO CONTENIDO-->
+
+    <main class="main-cart">
+        <div class="container">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto" src="/img/carritoicono.png" alt="" width="72"
+                    height="57">
+                <h2>Tienda Online</h2>
+                <p class="lead subtitulo-cart">Nuestro carrito de compras ya esta disponible para cualquier
+                    diaspositivo!</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="color-titulo-yourcart">Your cart</span>
+                        <span class="badge rounded-pill tres-objetos">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Remera Storu</h6>
+                                <small class="text-muted">Talle: L</small>
+                            </div>
+                            <span class="text-muted">$3000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Buzo Templey</h6>
+                                <small class="text-muted">Talle: M</small>
+                            </div>
+                            <span class="text-muted">$5000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Jean Manko</h6>
+                                <small class="text-muted">Talle: L</small>
+                            </div>
+                            <span class="text-muted">$6000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>TiendaOnlineIsGood</small>
+                            </div>
+                            <span class="text-success">−$1000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (Pesos)</span>
+                            <strong>$13.000,00</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Direccion de Envio</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Pon tu nombre" value=""
+                                    required>
+                                <div class="invalid-feedback">
+                                    Valid nombre is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Pon tu apellido"
+                                    value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email <span
+                                        class="text-muted">(Opcional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="address" placeholder="Pon tu direccion"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Pais</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="">Elige</option>
+                                    <option>Argentina</option>
+                                    <option>Brasil</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Ciudad</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option>Buenos Aires</option>
+                                    <option>Rio De Janeiro</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi
+                                Dirección de Envio.</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Guardar esta informacion.</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Pago</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                    required>
+                                <label class="form-check-label" for="credit">Tarjeta de Credito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Tarjeta de Debito</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="mercadopago" name="paymentMethod" type="radio" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="mercadopago">Mercado Pago</label>
+                            </div>
+                        </div>
+
+                        <div class="row-cart gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Nombre en la Tarjeta</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Numero de Tarjeta</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expiracion</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Expiration date required
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Security code required
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-lg color-boton" type="submit">Finalizar compra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--FINALIZO CONTENIDO-->
 
 
 
@@ -119,23 +317,23 @@
         </div>
     </footer>
     <!--FOOTER FINALIZA-->
-    
-        <!--LINK JS-->
-        <script src="/js/libreria.js"></script>
-        <script src="/js/main.js"></script>
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
-    
-    
-    
-    </body>
-    
-    </html>
+
+    <!--LINK JS-->
+    <script src="/js/libreria.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>
