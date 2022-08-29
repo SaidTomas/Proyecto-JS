@@ -1,6 +1,4 @@
-
-
-const useFetch = () => {
+/*const useFetch = () => {
     const url = 'https://api.mercadolibre.com/sites/MLA/search?q=ropa%20de%20abrigo'
     const titulo = document.getElementById ('tituloremeras');
     fetch(url).then(res => res.json())
@@ -16,4 +14,4 @@ const useFetch = () => {
             }
             //titulo.innerHTML = productos[0].title
         });
-}
+} */ 

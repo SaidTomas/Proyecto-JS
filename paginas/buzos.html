@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda Productos</title>
+        <!--Link de Boostrap 4.5.2-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Link de Bootsrap 5.1-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -56,117 +59,235 @@
             </div>
         </header>
 
-            <!--INICIO CONTENIDO-->
+    <!--INICIO CONTENIDO-->
+    <!-- START SECTION STORE -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
 
-    <main>
-        <div class="container p-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img class="itemImage" src="/img/buzo1.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Club</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo1" class="btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img src="/img/buzo2.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Weekend</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo2" class="item-button btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img src="/img/buzo3.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Buziak</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo3" class="item-button btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img src="/img/buzo4.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Bari</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo4" class="item-button btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img src="/img/buzo5.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Kanda</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo5" class="item-button btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Buzo-hombre col item" data-aos="zoom-in-up">
-                    <div class="card shadow-sm">
-                        <img src="/img/buzo6.jpg" alt="">
-                        <div class="card-body">
-                            <h5 class="itemTitle">Buzo Trento</h5>
-                            <p class="itemPrice">$ 5000.00</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Detalles</a>
-                                </div>
-                                <a href="#" id="Buzo6" class="item-button btn btn-success addToCart">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </main>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo Honta </h3>
+                            <img class="item-image" src="/img/buzo1.jpg">
 
-        <!--FINALIZO CONTENIDO-->
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo London </h3>
 
-        <!--FOOTER-->
-        <div class="container-footer">
-            <footer class="footer-home">
-                <h6>© 2021 Company, Inc</h6>
-                <p>All rights reserved.</p>
-            </footer>
+                            <img class="item-image" src="/img/buzo2.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo Buziak</h3>
+
+                            <img class="item-image" src="/img/buzo3.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">9.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo Lilie</h3>
+
+                            <img class="item-image" src="/img/buzo4.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">19.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo Templey </h3>
+
+                            <img class="item-image" src="/img/buzo5.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">19.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Buzo Guini</h3>
+
+                            <img class="item-image" src="/img/buzo6.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">6.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
 
-            <!--LINK JS-->
-    <script src="/js/libreria.js"></script>
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END MODAL COMPRA -->
+
+        </div>
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+    <!--FOOTER INICIA-->
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-fo">
+                <div class="column1">
+                    <h2>Mas informacion de la compañia</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit repellendus recusandae unde.
+                        At perspiciatis esse sit similique quos deserunt doloremque illum modi natus? Ratione id totam
+                        voluptas expedita debitis?
+                    </p>
+                </div>
+                <div class="column2">
+                    <h2>Redes Sociales</h2>
+                    <div class="row-contact">
+                        <a href="https://www.facebook.com/tomas.said.5/"><img src="/img/icon-facebook.png" alt=""></a>
+                        <label for="">Siguenos en Facebook</label>
+                    </div>
+                    <div class="row-contact">
+                        <a href="https://www.instagram.com/doronunderwear/"><img src="/img/icon-instagram.png"
+                                alt=""></a>
+                        <label for="">Siguenos en Instagram</label>
+                    </div>
+                    <div class="row-contact">
+                        <a href="https://web.whatsapp.com/"><img src="/img/icon-whatsapp.png" alt=""></a>
+                        <label for="">Contactanos por WhatsApp</label>
+                    </div>
+                </div>
+                <div class="column3">
+                    <h2>Informacion Contactos</h2>
+                    <div class="row2">
+                        <img src="/img/icon-casa.png" alt="">
+                        <label for=""> Argentina, Buenos Aires, CABA, Flores. Donato Alvarez 1400</label>
+                    </div>
+                    <div class="row2">
+                        <img src="/img/icon-celular.png" alt="">
+                        <label for="">11-6263-5952</label>
+                    </div>
+                    <div class="row2">
+                        <img src="/img/icon-mail.png" alt="">
+                        <label for="">tiendaonline2022@gmail.com</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fot">
+            <div class="footer-god">
+                <div class="copyright">
+                    © Copyright: TiendaOnline. | 2022
+                </div>
+                <div class="infromacion">
+                    Informacion Compañia | Terminos y Condiciones | Privacion y Politica
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER FINALIZA-->
+
+    <!--LINK JS-->
     <script src="/js/main.js"></script>
-
 
     <!--LINKS BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -175,5 +296,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"></script>
 </body>
 </html>

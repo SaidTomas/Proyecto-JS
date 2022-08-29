@@ -1,7 +1,7 @@
 //Agregando LIbrerias Al Proyecto!
 //Toastify cuando pulsas en agregar al carro
-const addToCart = () => {
-    /*Toastify({
+/*const addToCart = () => {
+    Toastify({
         text: "Probando toast!",
         duration: 3000,
         gravity: "top", 
@@ -10,7 +10,7 @@ const addToCart = () => {
         style: {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-    }).showToast();*/
+    }).showToast();
 }
 
 
@@ -28,4 +28,4 @@ btn .addEventListener ('click', () => {
         backgroundcolor: 'black',
         }
     });
-});
+});*/
